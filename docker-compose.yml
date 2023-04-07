@@ -12,7 +12,7 @@ services:
     networks:
       - freecodecamp
   test-db:
-    image: 'postgres:13'
+    image: 'postgres:${POSTGRES_VERSION}'
     ports:
       - ${POSTGRES_PORT}:5432
     environment:
